@@ -82,3 +82,53 @@ gradle -q test1 을 통해 실행할 수 있다
 extra["hasTests"] = true
 ```
 를 설정할 경우 설정한 부분에 한에서 실행이 가능하다
+
+```kotlin
+gradle.afterProject {
+    if (state.failure != null) {
+        println("Evaluation of $project FAILED")
+    } else {
+        println("Evaluation of $project succeeded")
+    }
+}
+
+```
+를 루트에서 실행시킬 경우, 모든 테스트마다 다 실행됨.
+앞쪽의 hasTests 랑 무관하게 작동함
+
+```kotlin
+tasks.whenTaskAdded {
+    extra["srcDir"] = "src/main/java"
+}
+
+val a by tasks.registering
+
+println("source dir is ${a.get().extra["srcDir"]}")
+```
+같은 것을 통해서 커스텀 listener를 추가할 수 있음
+
+```kotlin
+tasks.register("ok")
+
+tasks.register("broken") {
+    dependsOn("ok")
+    doLast {
+        throw RuntimeException("broken")
+    }
+}
+
+gradle.taskGraph.beforeTask {
+    println("executing $this ...")
+}
+
+gradle.taskGraph.afterTask {
+    if (state.failure != null) {
+        println("FAILED")
+    } else {
+        println("done")
+    }
+}
+```
+이렇게 됐을 때
+잘못된 경우 로그는 남지는 않았지만, 실행이 되지 않는 것을 확인 가능했다
+ok까지는 실행이 되고, 아닐 경우 실행이 되지 않은 것까지 볼 수 있었다

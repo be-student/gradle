@@ -16,8 +16,6 @@ J
 single/settings.gradle.kts,b\7\b7143ed3fad49cd8ccbdd501adb0f64e1677ea6b
 K
 single/app/build.gradle.kts,7\a\7a8c21fbbf87944834746c040267bf7b095989ca
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 J
 multi/app/build.gradle.kts,4\2\4244c4ce117a71ec2965e7c898e61fee2953f4b9
 |
