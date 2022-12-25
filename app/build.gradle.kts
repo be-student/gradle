@@ -28,6 +28,15 @@ application {
     // Define the main class for the application.
     mainClass.set("gradle.App")
 }
+task("hello"){
+    doFirst{
+        println("doFirst")
+    }
+    println("do Middle")
+    doLast {
+        println("doLast")
+    }
+}
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
