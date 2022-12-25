@@ -28,7 +28,7 @@ application {
     // Define the main class for the application.
     mainClass.set("gradle.App")
 }
-task("hello"){
+tasks.register("hello"){
     doFirst{
         println("doFirst")
     }

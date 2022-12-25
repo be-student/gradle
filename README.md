@@ -3,7 +3,7 @@
 # Gradle 학습
 
 ``` kotlin
-task("hello"){
+tasks.register("hello"){
     doFirst{
         println("doFirst")
     }
