@@ -9,3 +9,5 @@
 
 rootProject.name = "gradle"
 include("app")
+
+println("This is executed during the initialization phase.")
