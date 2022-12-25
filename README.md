@@ -13,7 +13,7 @@ tasks.register("hello"){
     }
 }
 ```
-![initial](./resource/hellotask.PNG)
+![initial](single/resource/hellotask.PNG)
 
 출력 순서가 doMiddle->doFirst->doLast 순서로 출력된다.
 
@@ -53,4 +53,4 @@ tasks.register("testBoth") {
     println("This is executed during the configuration phase as well, because :testBoth is used in the build.")
 }
 ```
-![tasks](./resource/tasks.PNG)
+![tasks](single/resource/tasks.PNG)
