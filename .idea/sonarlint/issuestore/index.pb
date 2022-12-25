@@ -1,0 +1,42 @@
+
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+>
+.gitattributes,2\4\24139dae656713ba861751fb2c2ac38839349a7a
+_
+/single/gradle/wrapper/gradle-wrapper.properties,8\f\8fd20af1dd6fe47cc711479e2df24e319c39ae55
+B
+single/gradlew.bat,0\6\06f703a5b7ac53d5cec679485a8a17c2d5d28827
+>
+single/gradlew,8\1\81e2bbd12bcd7fe4235a1a80d6613e4808060b4d
+X
+(single/app/src/main/java/gradle/App.java,2\a\2a84de5d956cbf3c816a1d8c39f0c6c3e86aff55
+J
+single/settings.gradle.kts,b\7\b7143ed3fad49cd8ccbdd501adb0f64e1677ea6b
+K
+single/app/build.gradle.kts,7\a\7a8c21fbbf87944834746c040267bf7b095989ca
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+J
+multi/app/build.gradle.kts,4\2\4244c4ce117a71ec2965e7c898e61fee2953f4b9
+|
+Lmulti/buildSrc/src/main/kotlin/multi.java-application-conventions.gradle.kts,0\d\0d774f4669e5c9d229b9f54440bc7777086b9c39
+w
+Gmulti/buildSrc/src/main/kotlin/multi.java-common-conventions.gradle.kts,f\8\f8485dfbfbb0f281bd1bf4e6b81e21cd5d427934
+x
+Hmulti/buildSrc/src/main/kotlin/multi.java-library-conventions.gradle.kts,7\2\72c06ac142cc9a0a2065a98d2de9c584896b50b6
+O
+multi/buildSrc/build.gradle.kts,5\9\59d64614435a368633c11ff80b020134e1d668b8
+c
+3multi/list/src/main/java/multi/list/LinkedList.java,1\4\1451e5c74ba5f33cb632d3afc76ca54ff5c50674
+P
+ multi/utilities/build.gradle.kts,d\e\de892312ceeb8b8647bd0bf3df7eba3cc25c3e2d
+l
+<multi/utilities/src/main/java/multi/utilities/JoinUtils.java,8\f\8f7879578a737eecd06c9ec61eb793a7b2830361
+m
+=multi/utilities/src/main/java/multi/utilities/SplitUtils.java,e\c\ec9b140c6fa7ca03594449e48d11786dfb56b3df
+n
+>multi/utilities/src/main/java/multi/utilities/StringUtils.java,4\c\4ca1083e86a0cf4ecafdbc6aaa8f3c06425f6559
+g
+7multi/list/src/test/java/multi/list/LinkedListTest.java,6\c\6c807a3bbef959bda4b7ed7382f53d8d00dbc5d5
