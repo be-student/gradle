@@ -1,7 +1,7 @@
 name: Run Gradle on PRs
 defaults:
   run:
-    working-directory: ./single
+    working-directory: ./multi
 on: pull_request
 jobs:
   gradle:
@@ -17,7 +17,7 @@ jobs:
           java-version: 17
 
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v2   
+        uses: gradle/gradle-build-action@v2
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Execute Gradle build
