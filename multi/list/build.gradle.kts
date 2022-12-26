@@ -18,14 +18,14 @@ tasks.register("broken") {
     }
 }
 
-gradle.taskGraph.beforeTask {
-    println("executing $this ...")
-}
-
-gradle.taskGraph.afterTask {
-    if (state.failure != null) {
-        println("FAILED")
-    } else {
-        println("done")
-    }
-}
+//gradle.taskGraph.beforeTask {
+//    println("executing $this ...")
+//}
+//
+//gradle.taskGraph.afterTask {
+//    if (state.failure != null) {
+//        println("FAILED")
+//    } else {
+//        println("done")
+//    }
+//}
