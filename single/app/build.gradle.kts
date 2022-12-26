@@ -142,3 +142,7 @@ println(path)
 tasks.test{
     dependsOn("hello")
 }
+
+tasks.build{
+    dependsOn("hello")
+}
