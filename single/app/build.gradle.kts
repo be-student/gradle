@@ -138,3 +138,7 @@ tasks.register("other") {
 
 println(name)
 println(path)
+
+tasks.test{
+    dependsOn("hello")
+}
