@@ -6,30 +6,30 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-single/.idea/**/workspace.xml
-single/.idea/**/tasks.xml
-single/.idea/**/usage.statistics.xml
-single/.idea/**/dictionaries
-single/.idea/**/shelf
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
 # AWS User-specific
-single/.idea/**/aws.xml
+.idea/**/aws.xml
 
 # Generated files
-single/.idea/**/contentModel.xml
+.idea/**/contentModel.xml
 
 # Sensitive or high-churn files
-single/.idea/**/dataSources/
-single/.idea/**/dataSources.ids
-single/.idea/**/dataSources.local.xml
-single/.idea/**/sqlDataSources.xml
-single/.idea/**/dynamic.xml
-single/.idea/**/uiDesigner.xml
-single/.idea/**/dbnavigator.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
 # Gradle
-single/.idea/**/gradle.xml
-single/.idea/**/libraries
+.idea/**/gradle.xml
+.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
@@ -48,7 +48,7 @@ single/.idea/**/libraries
 cmake-build-*/
 
 # Mongo Explorer plugin
-single/.idea/**/mongoSettings.xml
+.idea/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -63,10 +63,10 @@ out/
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-single/.idea/replstate.xml
+.idea/replstate.xml
 
 # SonarLint plugin
-single/.idea/sonarlint/
+.idea/sonarlint/
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
@@ -75,10 +75,10 @@ crashlytics-build.properties
 fabric.properties
 
 # Editor-based Rest Client
-single/.idea/httpRequests
+.idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
-single/.idea/caches/build_file_checksums.ser
+.idea/caches/build_file_checksums.ser
 
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
@@ -90,29 +90,29 @@ single/.idea/caches/build_file_checksums.ser
 
 # Sonarlint plugin
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
-single/.idea/**/sonarlint/
+.idea/**/sonarlint/
 
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-single/.idea/**/sonarIssues.xml
+.idea/**/sonarIssues.xml
 
 # Markdown Navigator plugin
 # https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-single/.idea/**/markdown-navigator.xml
-single/.idea/**/markdown-navigator-enh.xml
-single/.idea/**/markdown-navigator/
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
 
 # Cache file creation bug
 # See https://youtrack.jetbrains.com/issue/JBR-2257
-single/.idea/$CACHE_FILE$
+.idea/$CACHE_FILE$
 
 # CodeStream plugin
 # https://plugins.jetbrains.com/plugin/12206-codestream
-single/.idea/codestream.xml
+.idea/codestream.xml
 
 # Azure Toolkit for IntelliJ plugin
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
-single/.idea/**/azureSettings.xml
+.idea/**/azureSettings.xml
 
 ### Java ###
 # Compiled class file
