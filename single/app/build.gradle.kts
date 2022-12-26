@@ -28,15 +28,15 @@ application {
     // Define the main class for the application.
     mainClass.set("gradle.App")
 }
-tasks.register("hello"){
-    doFirst{
-        println("doFirst")
-    }
-    println("do Middle")
-    doLast {
-        println("doLast")
-    }
-}
+//tasks.register("hello"){
+//    doFirst{
+//        println("doFirst")
+//    }
+//    println("do Middle")
+//    doLast {
+//        println("doLast")
+//    }
+//}
 println("This is executed during the configuration phase.")
 
 tasks.register("configured") {
@@ -63,3 +63,78 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+//tasks.register("repeat1"){
+//    dependsOn("repeat2")
+//    doLast{
+//        repeat(4) {print("repeat1 $it ")}
+//    }
+//}
+//
+//tasks.register("repeat2"){
+//    doLast{
+//        repeat(4) {print("repeat2 $it ")}
+//    }
+//}
+
+//repeat(4){counter->
+//    tasks.register("repeat$counter"){
+//        doLast{
+//            repeat(4) {print("repeat$counter $it ")}
+//        }
+//    }
+//}
+
+//repeat(4) { counter ->
+//    tasks.register("task$counter") {
+//        doLast {
+//            println("I'm task number $counter")
+//        }
+//    }
+//}
+//tasks.named("task0") { dependsOn("task2", "task3") }
+
+
+tasks.register("hello") {
+    doLast {
+        println("Hello Earth")
+    }
+}
+tasks.named("hello") {
+    doFirst {
+        println("Hello Venus")
+    }
+}
+tasks.named("hello") {
+    doLast {
+        println("Hello Mars")
+    }
+}
+tasks.named("hello") {
+    doLast {
+        println("Hello Jupiter")
+    }
+}
+
+defaultTasks("clean1", "run1")
+
+tasks.register("clean1") {
+    doLast {
+        println("Default Cleaning!")
+    }
+}
+
+tasks.register("run1") {
+    doLast {
+        println("Default Running!")
+    }
+}
+
+tasks.register("other") {
+    doLast {
+        println("I'm not a default task!")
+    }
+}
+
+println(name)
+println(path)
