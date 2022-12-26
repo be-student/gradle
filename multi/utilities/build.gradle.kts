@@ -3,6 +3,7 @@
  */
 
 plugins {
+    id("multi.java-application-conventions")
     id("multi.java-library-conventions")
 }
 
